@@ -14,7 +14,7 @@ export const Searchbar = ({onSubmit}) => {
   })
 
   const handleSubmit = (values, {resetForm}) => {
-    console.log(values);
+    // console.log(values);
     onSubmit(values.inputParam)
     resetForm();
   }

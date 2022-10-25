@@ -61,7 +61,7 @@ export const App = () => {
   };
 
   const loadMoreImg = () => {
-    setPage(page + 1)
+    setPage(prevState => prevState + 1)
   }
 
   const findModalImage = (id, img, tags) => {
@@ -69,7 +69,7 @@ export const App = () => {
   };
 
   const formSubmitHandler = data => {
-    console.log(data);
+    // console.log(data);
   
       setSearchQuery(data)
       setPage(1)
